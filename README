@@ -1,0 +1,61 @@
+This it the readme for the MadSim model associated with the paper:
+
+Stein W, Straub O, Ausborn J, Mader W, Wolf H. (2008)
+Motor pattern selection by combinatorial code of interneuronal pathways.
+J Comput Neurosci 25:543-61 
+
+Abstract/Info: We studied the femur-tibia joint control system of the
+insect leg, and its switch between resistance reflex in posture
+control and "active reaction" in walking. The "active reaction" is
+basically a reversal of the resistance reflex. Both responses are
+elicited by the same sensory input and the same neuronal network (the
+femur-tibia network).  The femur-tibia network was modeled by fitting
+the responses of model neurons to those obtained in animals. Each
+implemented neuron has a physiological counterpart. The strengths of
+16 interneuronal pathways that integrate sensory input were then
+assigned three different values and varied independently, generating a
+database of more than 43 million network variants. The uploaded
+version contains the model that best represented the resistance
+reflex. Please see below for more help.  We demonstrate that the
+combinatorial code of interneuronal pathways determines motor
+output. A switch between different behaviors such as standing to
+walking can thus be achieved by altering the strengths of selected
+sensory integration pathways.
+
+
+Short info on using madSim Simulator:
+
+Copy the whole madsim folder to your hard disk. No installation
+needed. Madsim files are called .gui files. They are ASCII text files
+containing all parameters of the simulation. Click file -> open to open
+.gui files or use right mouse click to make new neuron / edit
+properties etc. To display result window in madSim, either select
+neurons with mouse and press CTRL + M or right click on neuron and
+select "display diagram window". Then press F1 to start simulation.
+Please note that madSim was originally developed in German. The
+English version has the same capablilities, but may come with
+translation errors.  Btw: MadSim uses HH equations and exponential
+Euler to calculate ion / synaptic currents.
+
+
+Information about the code:
+
+Neurons in "stick_insect_FT-simulation_resistance-reflex.gui":
+
+Sensory neurons in the femoral chordotonal organ:
+
+1, 10, 11 = position (+) sensitive 
+30,31,32 = position (-) sensitive
+2,3,5,26,27 = velocity (+) sensitive
+8,9,12,28,29 = velocity (+) sensitive
+
+20,21,22 = velocity (+) sensitive spiking interneurons 
+23,24,25 = velocity (-) sensitive spiking interneurons 
+
+E1 – E10 = identified excitatory nonspiking interneurons
+I1 – I8 = identified inhibitory nonspiking interneurons
+IE1 = identified interneuron that inhibits and excites
+
+SETi = Slow extensor tibiae motor neuron
+
+The model files were supplied by Wolfgang Stein.
